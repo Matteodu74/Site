@@ -1,0 +1,375 @@
+/* ============================================================
+   COURS & STAGES PAGE — Styles spécifiques
+   ============================================================ */
+
+/* Header override for internal pages */
+.header--scrolled-init .nav-container {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.header--scrolled-init .logo {
+    color: var(--text-dark);
+}
+
+.header--scrolled-init .nav-links a {
+    color: var(--text-dark);
+}
+
+.header--scrolled-init .menu-toggle span {
+    background: var(--text-dark);
+}
+
+.nav-active {
+    position: relative;
+}
+
+.nav-active::after {
+    width: 100% !important;
+    background: var(--cyan-electric) !important;
+}
+
+/* ============================================================
+   HERO — Cours & Stages
+   ============================================================ */
+.cours-hero {
+    padding: 160px 0 72px;
+    background: linear-gradient(160deg, #3a3a3a 0%, #2c2c2c 50%, #1a1a1a 100%);
+    text-align: center;
+}
+
+.cours-hero-content {
+    color: var(--white);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cours-hero-content h1 {
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 900;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.cours-hero-content p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+}
+
+/* ============================================================
+   PÉDAGOGIE — Coaches Section
+   ============================================================ */
+.pedagogie-section {
+    padding: var(--section-padding);
+    background: var(--off-white);
+}
+
+.pedagogie-title {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: var(--golden-yellow);
+    text-align: center;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+    font-style: italic;
+}
+
+.pedagogie-subtitle {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 48px;
+    line-height: 1.7;
+}
+
+/* Coaches Grid */
+.coaches-grid {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    flex-wrap: wrap;
+}
+
+.coach-card {
+    text-align: center;
+    max-width: 220px;
+}
+
+.coach-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    overflow: hidden;
+    border: 3px solid var(--golden-yellow);
+    background: linear-gradient(145deg, #e0e7ef 0%, #c8d6e5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.coach-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+}
+
+.coach-card h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.coach-role {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--golden-yellow);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+}
+
+.coach-card p {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* ============================================================
+   PLANNING HEBDOMADAIRE — Table
+   ============================================================ */
+.planning-section {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.planning-table-wrapper {
+    overflow-x: auto;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+.planning-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 680px;
+    font-size: 0.88rem;
+}
+
+.planning-table thead {
+    background: var(--royal-blue);
+}
+
+.planning-table thead th {
+    padding: 16px 20px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--white);
+    border-bottom: 2px solid var(--royal-blue-deep);
+}
+
+.planning-table thead th:first-child {
+    border-radius: var(--radius) 0 0 0;
+}
+
+.planning-table thead th:last-child {
+    border-radius: 0 var(--radius) 0 0;
+}
+
+.planning-table tbody tr {
+    border-bottom: 1px solid #f0f2f5;
+    transition: var(--transition);
+}
+
+.planning-table tbody tr:hover {
+    background: rgba(0, 98, 230, 0.03);
+}
+
+.planning-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.planning-table tbody td {
+    padding: 14px 20px;
+    color: var(--text-dark);
+    vertical-align: middle;
+}
+
+.planning-table tbody td:first-child {
+    font-weight: 700;
+    color: var(--royal-blue);
+    white-space: nowrap;
+}
+
+.planning-table tbody td strong {
+    color: var(--royal-blue);
+}
+
+/* Alternating row shading for readability */
+.planning-table tbody tr:nth-child(even) {
+    background: #fafbfc;
+}
+
+.planning-table tbody tr:hover {
+    background: rgba(0, 98, 230, 0.04);
+}
+
+/* ============================================================
+   CTA BANNER — Golden
+   ============================================================ */
+.cours-cta-banner {
+    padding: 0;
+    margin: 0;
+}
+
+.cours-cta-inner {
+    background: linear-gradient(135deg, var(--golden-yellow) 0%, #FFC300 100%);
+    border-radius: 0;
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.cours-cta-text h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+}
+
+.cours-cta-text p {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.btn-cta-dark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: var(--radius);
+    background: var(--text-dark);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.btn-cta-dark:hover {
+    background: var(--navy-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 992px) {
+    .coaches-grid {
+        gap: 40px;
+    }
+
+    .cours-cta-inner {
+        flex-direction: column;
+        text-align: center;
+        padding: 36px 28px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cours-hero {
+        padding: 120px 0 48px;
+    }
+
+    .cours-hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .coach-photo {
+        width: 110px;
+        height: 110px;
+    }
+
+    .coaches-grid {
+        gap: 32px;
+    }
+
+    /* Responsive table — stack on mobile */
+    .planning-table {
+        min-width: unset;
+    }
+
+    .planning-table thead {
+        display: none;
+    }
+
+    .planning-table tbody tr {
+        display: block;
+        margin-bottom: 16px;
+        border: 1px solid #e2e8f0;
+        border-radius: var(--radius-sm);
+        padding: 12px 16px;
+        background: var(--white);
+    }
+
+    .planning-table tbody tr:nth-child(even) {
+        background: var(--white);
+    }
+
+    .planning-table tbody td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 0;
+        border-bottom: 1px solid #f0f2f5;
+        font-size: 0.82rem;
+    }
+
+    .planning-table tbody td:last-child {
+        border-bottom: none;
+    }
+
+    .planning-table tbody td::before {
+        content: attr(data-label);
+        font-weight: 700;
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--royal-blue);
+        flex-shrink: 0;
+        margin-right: 12px;
+    }
+
+    .planning-table tbody td[rowspan] {
+        background: rgba(0, 98, 230, 0.04);
+        border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+        padding: 10px 0;
+    }
+
+    .cours-cta-inner {
+        padding: 28px 20px;
+    }
+}
