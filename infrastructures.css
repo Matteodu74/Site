@@ -1,0 +1,500 @@
+/* ============================================================
+   INFRASTRUCTURES PAGE — Styles spécifiques
+   ============================================================ */
+
+/* Header override for internal pages */
+.header--scrolled-init .nav-container {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.header--scrolled-init .logo {
+    color: var(--text-dark);
+}
+
+.header--scrolled-init .nav-links a {
+    color: var(--text-dark);
+}
+
+.header--scrolled-init .menu-toggle span {
+    background: var(--text-dark);
+}
+
+.nav-active {
+    position: relative;
+}
+
+.nav-active::after {
+    width: 100% !important;
+    background: var(--cyan-electric) !important;
+}
+
+/* ============================================================
+   INFRA HERO — Warm-toned with terre battue feel
+   ============================================================ */
+.infra-hero {
+    position: relative;
+    padding: 160px 0 80px;
+    overflow: hidden;
+    min-height: auto;
+    background: #3a2a1a;
+}
+
+.infra-hero-bg-placeholder {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, #8B6914 0%, #6B4E12 40%, #3a2a1a 100%);
+    z-index: 0;
+}
+
+.infra-hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.infra-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(58, 42, 26, 0.3) 0%, rgba(58, 42, 26, 0.7) 100%);
+    z-index: 2;
+}
+
+.infra-hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: var(--white);
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.infra-hero-content h1 {
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 900;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.infra-hero-content p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.7;
+}
+
+/* ============================================================
+   ORIGINE — D'où vient Padel Côtière ?
+   ============================================================ */
+.origine-section {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.origine-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.origine-label {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--golden-yellow);
+    margin-bottom: 12px;
+    background: rgba(255, 213, 0, 0.1);
+    padding: 6px 14px;
+    border-radius: 50px;
+}
+
+.origine-title {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: var(--golden-yellow);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+    font-style: italic;
+}
+
+.origine-text p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+.origine-image-wrapper {
+    position: relative;
+}
+
+.origine-image-placeholder {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: linear-gradient(145deg, #e8e0d4 0%, #d4ccc0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.origine-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+
+.origine-accent-block {
+    position: absolute;
+    bottom: -16px;
+    right: -16px;
+    width: 80px;
+    height: 80px;
+    background: var(--golden-yellow);
+    border-radius: var(--radius-sm);
+    z-index: 0;
+}
+
+/* ============================================================
+   TERRAINS DE HAUTE QUALITÉ
+   ============================================================ */
+.terrains-section {
+    padding: var(--section-padding);
+    background: var(--off-white);
+}
+
+.terrains-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.terrain-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    transition: var(--transition);
+}
+
+.terrain-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+    transform: translateY(-4px);
+}
+
+.terrain-card-header {
+    background: var(--golden-yellow);
+    padding: 20px 24px;
+}
+
+.terrain-card-header h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.terrain-card-img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background: linear-gradient(145deg, #e0e7ef 0%, #c8d6e5 100%);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terrain-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+
+.terrain-card-img--top {
+    order: -1;
+}
+
+.terrain-card-body {
+    padding: 24px;
+}
+
+.terrain-card-body h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.terrain-card-body p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.terrain-features {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.terrain-features li {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: var(--off-white);
+    border-radius: 50px;
+    border: 1px solid #e2e8f0;
+}
+
+/* ============================================================
+   APRÈS L'EFFORT, LE RÉCONFORT — Clubhouse
+   ============================================================ */
+.clubhouse-section {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.clubhouse-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.clubhouse-title {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: var(--golden-yellow);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+    font-style: italic;
+}
+
+.clubhouse-intro {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+.clubhouse-feature {
+    margin-bottom: 24px;
+    padding-left: 16px;
+    border-left: 3px solid var(--golden-yellow);
+}
+
+.clubhouse-feature h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+}
+
+.clubhouse-feature p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.clubhouse-image-placeholder {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: linear-gradient(145deg, #e0e7ef 0%, #c8d6e5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+}
+
+.clubhouse-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+
+/* ============================================================
+   SERVICES & CONFORT — Blue background
+   ============================================================ */
+.services-section {
+    padding: var(--section-padding);
+    background: linear-gradient(160deg, #0062E6 0%, #004BB5 60%, #003080 100%);
+    position: relative;
+}
+
+.services-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 80% 80%, rgba(0, 191, 255, 0.08) 0%, transparent 50%);
+}
+
+.services-section>.container {
+    position: relative;
+    z-index: 1;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.service-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 32px 28px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+}
+
+.service-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--royal-blue) 0%, var(--royal-blue-deep) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.service-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--white);
+}
+
+.service-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* ============================================================
+   FULL WIDTH IMAGE
+   ============================================================ */
+.infra-fullwidth-image {
+    margin: 0;
+    padding: 0;
+}
+
+.infra-fullwidth-placeholder {
+    width: 100%;
+    height: 420px;
+    background: linear-gradient(145deg, #1a3a5c 0%, #0d2240 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.infra-fullwidth-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 992px) {
+
+    .origine-grid,
+    .clubhouse-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .terrains-grid {
+        grid-template-columns: 1fr;
+        max-width: 520px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .infra-hero {
+        padding: 140px 0 60px;
+    }
+
+    .origine-image-wrapper {
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 600px) {
+    .infra-hero {
+        padding: 120px 0 48px;
+    }
+
+    .infra-hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 24px 20px;
+    }
+
+    .origine-accent-block {
+        width: 56px;
+        height: 56px;
+        bottom: -12px;
+        right: -12px;
+    }
+
+    .clubhouse-feature {
+        padding-left: 12px;
+    }
+
+    .infra-fullwidth-placeholder {
+        height: 260px;
+    }
+}

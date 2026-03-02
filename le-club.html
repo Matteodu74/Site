@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Découvrez le club Padel Côtière — L'union de trois clubs de Miribel, Neyron et Tramoyes au service du padel.">
+    <title>Le Club — Padel Côtière</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="le-club.css">
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════════════
+       HEADER — Same as landing page
+       ═══════════════════════════════════════════════ -->
+    <header class="header header--scrolled-init" id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="Padel Côtière — Accueil">
+                <span>Padel</span><span class="logo-accent">Côtière</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+                <a href="le-club.html" class="nav-active">Le club</a>
+                <a href="tarifs.html">Les tarifs</a>
+                <a href="infrastructures.html">Nos infrastructures</a>
+                <a href="#cours">Cours et stages</a>
+                <a href="#actualites">Actualités</a>
+                <a href="#contact">Contact</a>
+                <a href="#reserver" class="btn btn-primary nav-cta">RÉSERVEZ</a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════════════
+       HERO — Le Club
+       ═══════════════════════════════════════════════ -->
+    <section class="club-hero">
+        <div class="club-hero-bg-placeholder"></div>
+        <img src="" alt="Vue du club Padel Côtière" class="club-hero-bg" loading="eager">
+        <div class="club-hero-overlay"></div>
+
+        <div class="container club-hero-content">
+            <span class="club-hero-label">LE CLUB</span>
+            <h1>Padel Côtière, l'union de trois clubs au service du padel</h1>
+            <p class="club-hero-subtitle">
+                Miribel, Neyron et Tramoyes s'associent pour proposer une expérience padel complète : jeu libre,
+                compétition, apprentissage et convivialité.
+            </p>
+            <div class="club-hero-tags">
+                <a href="#miribel" class="club-tag">Miribel</a>
+                <a href="#neyron" class="club-tag">Neyron</a>
+                <a href="#tramoyes" class="club-tag">Tramoyes</a>
+                <a href="#padel-cotiere" class="club-tag club-tag--accent">Padel Côtière &amp; compétition</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+       LES CLUBS FONDATEURS
+       ═══════════════════════════════════════════════ -->
+    <section class="fondateurs" id="fondateurs">
+        <div class="container">
+            <h2 class="section-title reveal">Les clubs fondateurs</h2>
+
+            <!-- Card — Miribel -->
+            <article class="fondateur-card reveal" id="miribel">
+                <div class="fondateur-card-img">
+                    <img src="" alt="Club de Padel de Miribel">
+                    <span class="placeholder-label">Image</span>
+                </div>
+                <div class="fondateur-card-body">
+                    <span class="fondateur-badge">CLUB DE TENNIS</span>
+                    <h3>Miribel</h3>
+                    <p>
+                        Le club historique de la Côtière, moteur de la démocratisation du padel pour tous —
+                        joueurs de tennis et compétiteurs.
+                    </p>
+                    <ul class="fondateur-highlights">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                            Cadre remarquable à proximité du parc de Miribel-Jonage.
+                        </li>
+                    </ul>
+                    <a href="#" class="fondateur-link">
+                        Tout savoir sur le club de Miribel
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card — Neyron -->
+            <article class="fondateur-card fondateur-card--reverse reveal" id="neyron">
+                <div class="fondateur-card-img">
+                    <img src="" alt="Club de Padel de Neyron">
+                    <span class="placeholder-label">Image</span>
+                </div>
+                <div class="fondateur-card-body">
+                    <span class="fondateur-badge">CLUB DE TENNIS</span>
+                    <h3>Neyron</h3>
+                    <p>
+                        Une structure familiale et compétitive, idéale pour découvrir le padel et développer ses
+                        ambitions
+                        sportives dans un cadre convivial.
+                    </p>
+                    <ul class="fondateur-highlights">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z" />
+                            </svg>
+                            Animations régulières, tournois amicaux et vie de club dynamique.
+                        </li>
+                    </ul>
+                    <a href="#" class="fondateur-link">
+                        Tout savoir sur le club de Neyron
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                        </svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Card — Tramoyes -->
+            <article class="fondateur-card reveal" id="tramoyes">
+                <div class="fondateur-card-img">
+                    <img src="" alt="Club de Padel de Tramoyes">
+                    <span class="placeholder-label">Image</span>
+                </div>
+                <div class="fondateur-card-body">
+                    <span class="fondateur-badge">CLUB DE TENNIS</span>
+                    <h3>Tramoyes</h3>
+                    <p>
+                        Un club à taille humaine au cœur de la Côtière. Tournez-vous vers la nouveauté et la proximité
+                        avec
+                        des installations modernes.
+                    </p>
+                    <ul class="fondateur-highlights">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                                <path
+                                    d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                            </svg>
+                            Accès facile, entraînement padel et esprit associatif fort.
+                        </li>
+                    </ul>
+                    <a href="#" class="fondateur-link">
+                        Tout savoir sur le club de Tramoyes
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                        </svg>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+       PADEL CÔTIÈRE — Présentation & Chiffres
+       ═══════════════════════════════════════════════ -->
+    <section class="club-presentation" id="padel-cotiere">
+        <div class="container">
+            <div class="presentation-grid reveal">
+                <!-- Left — Story -->
+                <div class="presentation-text">
+                    <h2>Padel Côtière</h2>
+                    <p class="presentation-intro">L'union de trois clubs.</p>
+                    <p>
+                        Les clubs de Miribel, Neyron et Tramoyes fusionnent leurs forces pour créer Padel Côtière —
+                        un pôle d'excellence dédié au padel.
+                    </p>
+                    <p>
+                        Fort de son assemblage dynamique, Padel Côtière propose des infrastructures neuves avec 4
+                        terrains de padel, un accompagnement complet sur 3 niveaux, un restaurant-bar, une
+                        boutique et un espace de location de matériel.
+                    </p>
+                    <p>
+                        Nous proposons d'ici la fin de l'année 2027 jusqu'à 8 terrains avec la création de nouvelles
+                        infrastructures actuellement en cours de développement.
+                    </p>
+                    <p>
+                        L'apprentissage est aussi au cœur de notre projet avec des cours de padel dispensés par nos
+                        enseignants diplômés.
+                    </p>
+                    <p>
+                        Le projet de développement du padel basé en plein Côtière favorise un ancrage local avec
+                        l'expérience
+                        de Miribel dans le club situé en plein cœur de Miribel-Jonage et Neyron/Tramoyes.
+                    </p>
+                    <p>
+                        Ce projet commun qui enrichit le padel sur la Côtière, pour VPs ou joueurs et les pratiques de
+                        pratique, de performance et de partage.
+                    </p>
+                </div>
+
+                <!-- Right — Stats Card -->
+                <div class="presentation-stats-card">
+                    <h3>Padel Côtière en chiffres</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">PISTES</span>
+                            <span class="stat-number">4</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">JOUEURS ATTENDUS</span>
+                            <span class="stat-number">800<span class="stat-plus">+</span></span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">TERRAINS COUVERTS</span>
+                            <span class="stat-number">2</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">MONITEUR DIPLÔMÉ</span>
+                            <span class="stat-number">7</span>
+                        </div>
+                    </div>
+                    <p class="stats-desc">
+                        Padel, padel-touch, padel-kids : il en a pour tous les niveaux, toutes les envies et toutes les
+                        ambitions sur la Côtière.
+                    </p>
+                    <div class="stats-actions">
+                        <a href="#reserver" class="btn btn-stats-primary">Rejoindre Padel Côtière</a>
+                        <a href="#cours" class="btn btn-stats-outline">Voir les cours et stages →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+       CTA — Envie d'en savoir plus ?
+       ═══════════════════════════════════════════════ -->
+    <section class="cta-section">
+        <div class="container reveal">
+            <h2>Envie d'en savoir plus sur le club ?</h2>
+            <p class="cta-desc">
+                Contactez-nous pour une visite, une session découverte ou des informations sur l'adhésion.
+            </p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Nous contacter</a>
+                <a href="#tarifs" class="btn btn-outline">Découvrir nos tarifs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+       PARTENAIRES — Same as landing
+       ═══════════════════════════════════════════════ -->
+    <section class="partenaires">
+        <div class="container">
+            <h2 class="section-title reveal">NOS PARTENAIRES</h2>
+
+            <div class="partners-grid reveal">
+                <div class="partner-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                    </svg>
+                </div>
+                <div class="partner-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+                    </svg>
+                </div>
+                <div class="partner-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z" />
+                    </svg>
+                </div>
+                <div class="partner-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                </div>
+                <div class="partner-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                </div>
+                <div class="partner-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+       FOOTER — Same as landing
+       ═══════════════════════════════════════════════ -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Padel <span>Côtière</span></h3>
+                    <ul class="footer-contact-list">
+                        <li class="footer-contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                            <span>123 Route du Sport, 01700 Miribel</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                            </svg>
+                            <a href="tel:+33478000000">04 78 00 00 00</a>
+                        </li>
+                        <li class="footer-contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                            <a href="mailto:contact@padelcotiere.fr">contact@padelcotiere.fr</a>
+                        </li>
+                    </ul>
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-form-section">
+                    <h4>Nous contacter</h4>
+                    <form class="footer-form" id="contactForm" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Nom complet</label>
+                                <input type="text" id="form-name" name="name" placeholder="Votre nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <input type="email" id="form-email" name="email" placeholder="votre@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" name="message" placeholder="Comment pouvons-nous vous aider ?"
+                                rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Padel Côtière. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════════
+       SCRIPTS
+       ═══════════════════════════════════════════════ -->
+    <script>
+        // ── Mobile Menu Toggle ──
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // ── Header scroll styling ──
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 60);
+        });
+        // Initialize scrolled state on page load
+        if (window.scrollY > 60) header.classList.add('scrolled');
+
+        // ── Scroll-reveal animation ──
+        const revealEls = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        revealEls.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+
+</html>

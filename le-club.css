@@ -1,0 +1,460 @@
+/* ============================================================
+   LE CLUB PAGE — Styles spécifiques
+   ============================================================ */
+
+/* ── Header override for internal pages ── */
+.header--scrolled-init .nav-container {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.header--scrolled-init .logo {
+    color: var(--text-dark);
+}
+
+.header--scrolled-init .nav-links a {
+    color: var(--text-dark);
+}
+
+.header--scrolled-init .menu-toggle span {
+    background: var(--text-dark);
+}
+
+/* Active nav link */
+.nav-active {
+    position: relative;
+}
+
+.nav-active::after {
+    width: 100% !important;
+    background: var(--cyan-electric) !important;
+}
+
+/* ============================================================
+   CLUB HERO — Compact hero with blue background
+   ============================================================ */
+.club-hero {
+    position: relative;
+    padding: 160px 0 80px;
+    background: var(--royal-blue);
+    overflow: hidden;
+    min-height: auto;
+}
+
+.club-hero-bg-placeholder {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, #0062E6 0%, #004BB5 60%, #003080 100%);
+    z-index: 0;
+}
+
+.club-hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.25;
+}
+
+.club-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 62, 180, 0.4) 0%, rgba(0, 48, 128, 0.7) 100%);
+    z-index: 2;
+}
+
+.club-hero-content {
+    position: relative;
+    z-index: 3;
+    color: var(--white);
+    max-width: 800px;
+}
+
+.club-hero-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 16px;
+}
+
+.club-hero-content h1 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.club-hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 640px;
+    margin-bottom: 28px;
+}
+
+/* Tags / Pills */
+.club-hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.club-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--white);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: var(--transition);
+}
+
+.club-tag:hover {
+    background: rgba(255, 255, 255, 0.28);
+    transform: translateY(-1px);
+}
+
+.club-tag--accent {
+    background: var(--golden-yellow);
+    color: var(--text-dark);
+    border-color: var(--golden-yellow);
+}
+
+.club-tag--accent:hover {
+    background: #e6c000;
+}
+
+/* ============================================================
+   FONDATEURS — Club Founder Cards
+   ============================================================ */
+.fondateurs {
+    padding: var(--section-padding);
+    background: var(--off-white);
+}
+
+.fondateurs .section-title {
+    margin-bottom: 48px;
+}
+
+.fondateur-card {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+    margin-bottom: 32px;
+    transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.fondateur-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+    transform: translateY(-2px);
+}
+
+.fondateur-card:last-child {
+    margin-bottom: 0;
+}
+
+.fondateur-card-img {
+    position: relative;
+    width: 100%;
+    min-height: 260px;
+    background: linear-gradient(145deg, #e0e7ef 0%, #c8d6e5 100%);
+    overflow: hidden;
+}
+
+.fondateur-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+
+.fondateur-card-body {
+    padding: 36px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fondateur-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+.fondateur-card-body h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+}
+
+.fondateur-card-body p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.fondateur-highlights {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.fondateur-highlights li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.fondateur-highlights svg {
+    flex-shrink: 0;
+    fill: var(--cyan-electric);
+    margin-top: 2px;
+}
+
+.fondateur-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--cyan-electric);
+    transition: var(--transition);
+}
+
+.fondateur-link:hover {
+    color: var(--cyan-hover);
+    gap: 10px;
+}
+
+.fondateur-link svg {
+    fill: currentColor;
+    transition: var(--transition);
+}
+
+/* ============================================================
+   CLUB PRESENTATION — Text + Stats Side-by-Side
+   ============================================================ */
+.club-presentation {
+    padding: var(--section-padding);
+    background: linear-gradient(180deg, #f0f4f8 0%, #e2e8f0 100%);
+}
+
+.presentation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.presentation-text h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.presentation-intro {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--royal-blue);
+    margin-bottom: 20px !important;
+}
+
+.presentation-text p {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: 14px;
+}
+
+/* Stats Card */
+.presentation-stats-card {
+    background: var(--royal-blue);
+    border-radius: var(--radius);
+    padding: 40px;
+    color: var(--white);
+    box-shadow: 0 12px 40px rgba(0, 98, 230, 0.25);
+}
+
+.presentation-stats-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 28px;
+    color: var(--white);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.stat-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.stat-number {
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1;
+    color: var(--white);
+    letter-spacing: -0.03em;
+}
+
+.stat-plus {
+    font-size: 1.6rem;
+    color: var(--golden-yellow);
+}
+
+.stats-desc {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.6;
+    margin-bottom: 24px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.stats-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-stats-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: var(--radius);
+    background: var(--golden-yellow);
+    color: var(--text-dark);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.btn-stats-primary:hover {
+    background: #e6c000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 213, 0, 0.3);
+}
+
+.btn-stats-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    font-family: var(--font-main);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-stats-outline:hover {
+    color: var(--white);
+}
+
+/* ============================================================
+   RESPONSIVE — Le Club Page
+   ============================================================ */
+@media (max-width: 992px) {
+    .fondateur-card {
+        grid-template-columns: 1fr;
+    }
+
+    .fondateur-card-img {
+        min-height: 220px;
+    }
+
+    .presentation-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .club-hero {
+        padding: 140px 0 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .club-hero {
+        padding: 120px 0 48px;
+    }
+
+    .club-hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .club-hero-tags {
+        gap: 8px;
+    }
+
+    .club-tag {
+        padding: 8px 16px;
+        font-size: 0.78rem;
+    }
+
+    .fondateur-card-body {
+        padding: 24px;
+    }
+
+    .fondateur-card-body h3 {
+        font-size: 1.25rem;
+    }
+
+    .presentation-stats-card {
+        padding: 28px;
+    }
+
+    .stat-number {
+        font-size: 2.2rem;
+    }
+}
