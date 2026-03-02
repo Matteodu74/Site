@@ -1,0 +1,248 @@
+/* ============================================================
+   RÉSERVER PAGE — Styles spécifiques
+   ============================================================ */
+
+/* Header override */
+.header--scrolled-init .nav-container {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.header--scrolled-init .logo {
+    color: var(--text-dark);
+}
+
+.header--scrolled-init .nav-links a {
+    color: var(--text-dark);
+}
+
+.header--scrolled-init .menu-toggle span {
+    background: var(--text-dark);
+}
+
+/* Active state for Réservez CTA button */
+.nav-cta--active {
+    background: var(--golden-yellow) !important;
+    border-color: var(--golden-yellow) !important;
+    color: var(--text-dark) !important;
+}
+
+/* ============================================================
+   HERO — Réservez votre terrain
+   ============================================================ */
+.reserver-hero {
+    padding: 160px 0 72px;
+    background: linear-gradient(160deg, #0062E6 0%, #004BB5 50%, #003080 100%);
+    text-align: center;
+    position: relative;
+}
+
+.reserver-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 80%, rgba(0, 191, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 30%, rgba(255, 213, 0, 0.06) 0%, transparent 40%);
+}
+
+.reserver-hero-content {
+    position: relative;
+    color: var(--white);
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.reserver-hero-content h1 {
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 900;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.reserver-hero-content p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+}
+
+/* ============================================================
+   BOOKING CARDS
+   ============================================================ */
+.booking-section {
+    padding: 80px 0 100px;
+    background: var(--off-white);
+}
+
+.booking-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.booking-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 40px 36px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    transition: var(--transition);
+}
+
+.booking-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.10);
+}
+
+.booking-card--featured {
+    border: 2px solid var(--golden-yellow);
+}
+
+/* Logo area */
+.booking-card-logo {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--off-white);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    position: relative;
+}
+
+.booking-card-logo img {
+    max-height: 40px;
+    max-width: 140px;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.booking-card h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.booking-card-desc {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Features list */
+.booking-features {
+    list-style: none;
+    flex: 1;
+    margin-bottom: 28px;
+}
+
+.booking-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.booking-features svg {
+    flex-shrink: 0;
+    fill: var(--cyan-electric);
+    margin-top: 2px;
+}
+
+/* Buttons */
+.btn-booking-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: var(--radius);
+    background: var(--golden-yellow);
+    color: var(--text-dark);
+    border: 2px solid var(--golden-yellow);
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-booking-primary:hover {
+    background: #e6c000;
+    border-color: #e6c000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 213, 0, 0.35);
+}
+
+.btn-booking-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: var(--radius);
+    background: transparent;
+    color: var(--text-dark);
+    border: 2px solid #cbd5e1;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-booking-outline:hover {
+    border-color: var(--royal-blue);
+    background: var(--royal-blue);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 98, 230, 0.2);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 992px) {
+    .booking-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 600px) {
+    .reserver-hero {
+        padding: 120px 0 48px;
+    }
+
+    .reserver-hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .booking-card {
+        padding: 28px 24px;
+    }
+
+    .booking-section {
+        padding: 48px 0 60px;
+    }
+}
