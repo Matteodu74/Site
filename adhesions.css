@@ -1,0 +1,436 @@
+/* ============================================================
+   ADHESIONS PAGE — Styles spécifiques
+   ============================================================ */
+
+/* Hero */
+.adhesion-hero {
+    padding: 160px 0 72px;
+    background: linear-gradient(160deg, #1c2833 0%, #0d1620 100%);
+    text-align: center;
+}
+
+.adhesion-hero-content {
+    color: var(--white);
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.adhesion-hero-content h1 {
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 900;
+    margin-bottom: 16px;
+    color: var(--golden-yellow);
+    letter-spacing: -0.02em;
+}
+
+.adhesion-hero-content p {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.7;
+}
+
+/* Benefits section */
+.adhesion-benefits {
+    padding: var(--section-padding);
+    background: var(--off-white);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.benefit-card {
+    background: var(--white);
+    padding: 32px 24px;
+    border-radius: var(--radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    text-align: center;
+    border: 1px solid #eef1f5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+.benefit-icon {
+    width: 64px;
+    height: 64px;
+    background: rgba(0, 98, 230, 0.08);
+    color: var(--royal-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.benefit-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
+}
+
+.benefit-card h3 {
+    font-size: 1.25rem;
+    color: var(--navy-dark);
+    margin-bottom: 12px;
+    font-weight: 800;
+}
+
+.benefit-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Launch Offer */
+.adhesion-launch {
+    padding: var(--section-padding) 0 0 0;
+    background: var(--off-white);
+}
+
+.launch-content {
+    background: linear-gradient(135deg, var(--white) 0%, #f8fafd 100%);
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius);
+    padding: 56px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.04);
+}
+
+.launch-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 48px;
+}
+
+.launch-badge {
+    display: inline-block;
+    background: rgba(255, 195, 0, 0.15);
+    color: #cc9c00;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 195, 0, 0.3);
+}
+
+.launch-header h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--navy-dark);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.launch-header p {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.launch-cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.launch-card {
+    background: var(--white);
+    border: 1px solid #eef1f5;
+    border-radius: var(--radius);
+    padding: 32px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease;
+}
+
+.launch-card:hover {
+    transform: translateY(-5px);
+}
+
+.launch-card h3 {
+    font-size: 1.3rem;
+    color: var(--navy-dark);
+    margin-bottom: 8px;
+}
+
+.launch-card .price {
+    font-size: 2.8rem;
+    margin-bottom: 16px;
+}
+
+.launch-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.premium-launch {
+    border-color: rgba(0, 98, 230, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 98, 230, 0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+.premium-launch::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--royal-blue);
+}
+
+@media (max-width: 768px) {
+    .launch-content {
+        padding: 40px 24px;
+    }
+}
+
+/* Pricing */
+.adhesion-pricing {
+    padding: var(--section-padding);
+    background: var(--white);
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 48px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius);
+    max-width: 380px;
+    width: 100%;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+}
+
+.pricing-card.premium-card {
+    border-color: var(--golden-yellow);
+    box-shadow: 0 15px 35px rgba(255, 195, 0, 0.12);
+    position: relative;
+}
+
+.pricing-card.premium-card::before {
+    content: "La plus choisie";
+    position: absolute;
+    top: 20px;
+    right: -36px;
+    background: var(--golden-yellow);
+    color: var(--navy-dark);
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 6px 40px;
+    transform: rotate(45deg);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+
+.card-header {
+    background: #fafbfc;
+    padding: 40px 32px 32px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.premium-card .card-header {
+    background: linear-gradient(135deg, rgba(255, 195, 0, 0.08) 0%, rgba(255, 195, 0, 0.02) 100%);
+}
+
+.card-header h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--navy-dark);
+    margin-bottom: 16px;
+}
+
+.price {
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: var(--royal-blue);
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+
+.price span {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.premium-card .price {
+    color: var(--golden-yellow);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.card-body {
+    padding: 32px;
+}
+
+.card-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px 0;
+}
+
+.card-body li {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+.card-body li strong {
+    color: var(--navy-dark);
+}
+
+.card-body li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--royal-blue);
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.premium-card .card-body li::before {
+    color: var(--golden-yellow);
+}
+
+.card-body .btn {
+    width: 100%;
+}
+
+.btn-outline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 28px;
+    border: 2px solid var(--royal-blue);
+    color: var(--royal-blue);
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: var(--transition);
+}
+
+.btn-outline:hover {
+    background: var(--royal-blue);
+    color: var(--white);
+}
+
+/* Info Section */
+.adhesion-info {
+    padding: 20px 0 100px;
+    background: var(--white);
+}
+
+.info-content {
+    background: var(--navy-dark);
+    color: var(--white);
+    padding: 56px 64px;
+    border-radius: var(--radius);
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 20px 40px rgba(35, 47, 62, 0.15);
+    text-align: center;
+}
+
+.info-content h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    color: var(--golden-yellow);
+}
+
+.info-content p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.info-content p:last-child {
+    margin-bottom: 0;
+}
+
+.info-content strong {
+    color: var(--white);
+    font-weight: 700;
+}
+
+/* Header overrides for this page */
+.header--scrolled-init .nav-container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.header--scrolled-init .logo {
+    color: var(--text-dark);
+}
+
+.header--scrolled-init .nav-links a {
+    color: var(--text-dark);
+}
+
+.header--scrolled-init .menu-toggle span {
+    background: var(--text-dark);
+}
+
+.nav-active {
+    position: relative;
+}
+
+.nav-active::after {
+    width: 100% !important;
+    background: var(--cyan-electric) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .info-content {
+        padding: 40px 24px;
+    }
+
+    .adhesion-hero h1 {
+        font-size: 2rem;
+    }
+}

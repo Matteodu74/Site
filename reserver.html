@@ -19,13 +19,15 @@
     <header class="header header--scrolled-init" id="header">
         <div class="nav-container">
             <a href="index.html" class="logo" aria-label="Padel Côtière — Accueil">
-                <span>Padel</span><span class="logo-accent">Côtière</span>
+                <img src="logo padel cotiere.png" alt="Padel Côtière Logo">
             </a>
             <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
                 <a href="le-club.html">Le club</a>
                 <a href="tarifs.html">Les tarifs</a>
+                <a href="adhesions.html">Adhésions</a>
                 <a href="infrastructures.html">Nos infrastructures</a>
                 <a href="cours.html">Cours et stages</a>
+                <a href="tournois.html">Tournois</a>
                 <a href="actualites.html">Actualités</a>
                 <a href="contact.html">Contact</a>
                 <a href="reserver.html" class="btn btn-primary nav-cta nav-cta--active">RÉSERVEZ</a>
@@ -47,92 +49,74 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════
-       CARTES DE RÉSERVATION
+       OPTIONS DE RÉSERVATION
        ═══════════════════════════════════════════════ -->
     <section class="booking-section">
         <div class="container">
-            <div class="booking-grid reveal">
+            <div class="booking-list reveal">
 
-                <!-- Card 1 — Ten'Up FFT -->
-                <div class="booking-card booking-card--featured">
-                    <div class="booking-card-logo">
-                        <img src="" alt="Logo Ten'Up FFT">
-                        <span class="placeholder-label" style="font-size: 0.6rem;">Logo Ten'Up</span>
+                <!-- Item 1: Location -->
+                <div class="booking-list-item">
+                    <div class="booking-list-content">
+                        <h3>Réservez un créneau en location</h3>
+                        <p>Jouez quand vous le souhaitez. Sans engagement, vous pouvez réserver votre terrain pour une
+                            partie ponctuelle avec vos amis. Idéal pour ceux qui veulent découvrir le padel ou jouer
+                            occasionnellement à Padel Côtière.</p>
+                        <ul class="booking-features">
+                            <li>Ouvert à tous, sans adhésion requise</li>
+                            <li>Paiement en ligne sécurisé</li>
+                            <li>Prêt de matériel possible sur place</li>
+                        </ul>
                     </div>
-                    <h3>Application Officielle FFT</h3>
-                    <p class="booking-card-desc">
-                        Le moyen le plus utilisé pour réserver vos terrains et vos créneaux de jeu. L'appli
-                        officielle de la FFT, reconnue par tous les clubs.
-                    </p>
-                    <ul class="booking-features">
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                            </svg>
-                            Suivi préférences de jeu et niveau
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                            </svg>
-                            Réservation jusqu'à 7 jours à l'avance
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                            </svg>
-                            Paiement en ligne sécurisé
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                            </svg>
-                            Disponible sur iOS et Android
-                        </li>
-                    </ul>
-                    <a href="#" class="btn-booking-primary">Réserver sur Ten'Up</a>
+                    <div class="booking-list-action">
+                        <a href="#" class="btn-booking-primary">Cliquez ici</a>
+                    </div>
                 </div>
 
-                <!-- Card 2 — Réservation Web -->
-                <div class="booking-card">
-                    <div class="booking-card-logo">
-                        <img src="" alt="Logo Padel Côtière">
-                        <span class="placeholder-label" style="font-size: 0.6rem;">Logo</span>
+                <!-- Item 2: Matchs Libres -->
+                <div class="booking-list-item">
+                    <div class="booking-list-content">
+                        <h3>Faire des matchs libres</h3>
+                        <p>Envie de jouer mais il vous manque des partenaires ? Rejoignez des parties ouvertes créées
+                            par d'autres joueurs de votre niveau. Une excellente façon de rencontrer d'autres passionnés
+                            et de progresser rapidement.</p>
+                        <ul class="booking-features">
+                            <li>Recherche de joueurs par niveau (P25 à P250)</li>
+                            <li>Élargissez votre cercle de partenaires</li>
+                            <li>Partagez les frais de location</li>
+                        </ul>
                     </div>
-                    <h3>Réservation Instantanée</h3>
-                    <p class="booking-card-desc">
-                        Officielle, rapide et sans engagement pour les occasions
-                        ponctuelles ou les joueurs de passage.
-                    </p>
-                    <ul class="booking-features">
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                            </svg>
-                            Accès libre sans compte obligatoire
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                            </svg>
-                            Paiement sécurisé en ligne
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                            </svg>
-                            Idéal pour un match rapide
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                            </svg>
-                            Disponible sur App et Web
-                        </li>
-                    </ul>
-                    <a href="#" class="btn-booking-outline">Réserver via le Web</a>
+                    <div class="booking-list-action">
+                        <a href="#" class="btn-booking-primary">Cliquez ici</a>
+                    </div>
                 </div>
 
+                <!-- Item 3: Adhérents -->
+                <div class="booking-list-item booking-list-item--featured">
+                    <div class="booking-list-content">
+                        <h3>Réservez un court (Adhérents)</h3>
+                        <p>Vous êtes membre de Padel Côtière ? Accédez à votre espace dédié pour profiter de tous vos
+                            avantages exclusifs : réservation anticipée, gratuité ou tarifs préférentiels et accès
+                            prioritaire aux heures de pointe.</p>
+                        <ul class="booking-features">
+                            <li>Ouverture des créneaux en avant-première</li>
+                            <li>Gestion simplifiée de vos sessions</li>
+                            <li>Accédez à votre historique et vos avantages</li>
+                        </ul>
+                    </div>
+                    <div class="booking-list-action">
+                        <a href="#" class="btn-booking-primary">Cliquez ici</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="booking-info reveal">
+                <h3>Une question sur votre réservation ?</h3>
+                <p>Notre équipe est à votre disposition pour vous accompagner. Que ce soit pour organiser un événement
+                    spécial, mettre en place une session d'entreprise, ou tout simplement si vous rencontrez une
+                    difficulté avec notre plateforme en ligne, n'hésitez pas !</p>
+                <a href="contact.html" class="btn-booking-outline">Contactez-nous</a>
             </div>
         </div>
     </section>
@@ -144,28 +128,29 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
-                    <h3>Padel <span>Côtière</span></h3>
+                    <img src="logo padel cotiere.png" alt="Padel Côtière Logo" class="footer-logo"
+                        style="height: 110px; margin-bottom: 24px;">
                     <ul class="footer-contact-list">
                         <li class="footer-contact-item">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                             </svg>
-                            <span>123 Route du Sport, 01700 Miribel</span>
+                            <span>Chem. de Halage, 01700 Neyron, France</span>
                         </li>
                         <li class="footer-contact-item">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                             </svg>
-                            <a href="tel:+33478000000">04 78 00 00 00</a>
+                            <a href="tel:+33688383652">06 88 38 36 52</a>
                         </li>
                         <li class="footer-contact-item">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                             </svg>
-                            <a href="mailto:contact@padelcotiere.fr">contact@padelcotiere.fr</a>
+                            <a href="mailto:padelcotiere@gmail.com">padelcotiere@gmail.com</a>
                         </li>
                     </ul>
                     <div class="footer-socials">
@@ -186,7 +171,8 @@
 
                 <div class="footer-form-section">
                     <h4>Nous contacter</h4>
-                    <form class="footer-form" id="contactForm" action="#" method="POST">
+                    <form class="footer-form" id="contactForm" action="mailto:padelcotiere@gmail.com" method="POST"
+                        enctype="text/plain">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="form-name">Nom complet</label>
@@ -196,6 +182,10 @@
                                 <label for="form-email">Email</label>
                                 <input type="email" id="form-email" name="email" placeholder="votre@email.com" required>
                             </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-phone">Numéro de téléphone</label>
+                            <input type="tel" id="form-phone" name="phone" placeholder="06 00 00 00 00" required>
                         </div>
                         <div class="form-group">
                             <label for="form-message">Message</label>

@@ -19,13 +19,15 @@
     <header class="header header--scrolled-init" id="header">
         <div class="nav-container">
             <a href="index.html" class="logo" aria-label="Padel Côtière — Accueil">
-                <span>Padel</span><span class="logo-accent">Côtière</span>
+                <img src="logo padel cotiere.png" alt="Padel Côtière Logo">
             </a>
             <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
                 <a href="le-club.html">Le club</a>
                 <a href="tarifs.html">Les tarifs</a>
+                <a href="adhesions.html">Adhésions</a>
                 <a href="infrastructures.html">Nos infrastructures</a>
                 <a href="cours.html" class="nav-active">Cours et stages</a>
+                <a href="tournois.html">Tournois</a>
                 <a href="actualites.html">Actualités</a>
                 <a href="contact.html">Contact</a>
                 <a href="reserver.html" class="btn btn-primary nav-cta">RÉSERVEZ</a>
@@ -58,13 +60,11 @@
             </p>
 
             <div class="coaches-grid reveal">
-                <!-- Coach 1 — Julien -->
+                <!-- Coach 1 — Jean-Christophe -->
                 <div class="coach-card">
                     <div class="coach-photo">
-                        <img src="" alt="Julien — Moniteur de Padel">
-                        <span class="placeholder-label" style="font-size: 0.7rem;">Photo</span>
                     </div>
-                    <h3>Julien</h3>
+                    <h3>Jean-Christophe</h3>
                     <span class="coach-role">Enseignant Diplômé d'État</span>
                     <p>
                         Expert Padel & Tennis<br>
@@ -72,13 +72,11 @@
                     </p>
                 </div>
 
-                <!-- Coach 2 — Thomas -->
+                <!-- Coach 2 — Sébastien -->
                 <div class="coach-card">
                     <div class="coach-photo">
-                        <img src="" alt="Thomas — Moniteur de Padel">
-                        <span class="placeholder-label" style="font-size: 0.7rem;">Photo</span>
                     </div>
-                    <h3>Thomas</h3>
+                    <h3>Sébastien</h3>
                     <span class="coach-role">Enseignant Diplômé d'État</span>
                     <p>
                         Moniteur Confirmé<br>
@@ -105,134 +103,41 @@
                     <thead>
                         <tr>
                             <th>Jour</th>
-                            <th>Horaire</th>
-                            <th>Cours</th>
-                            <th>Niveau</th>
-                            <th>Tarifs</th>
+                            <th>Horaires</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Lundi -->
                         <tr>
-                            <td data-label="Jour" rowspan="2"><strong>Lundi</strong></td>
-                            <td data-label="Horaire">19h00 – 19h10</td>
-                            <td data-label="Cours">Adultes</td>
-                            <td data-label="Niveau">Initiation / Découverte</td>
-                            <td data-label="Tarifs">N/S</td>
+                            <td data-label="Jour"><strong>Lun, Mar, Jeu, Ven</strong></td>
+                            <td data-label="Horaires">
+                                <ul style="list-style:none; padding:0; margin:0;">
+                                    <li>18h00 – 19h15</li>
+                                    <li>19h15 – 20h30</li>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
-                            <td data-label="Horaire">19h00 – 20h30</td>
-                            <td data-label="Cours">Adultes</td>
-                            <td data-label="Niveau">Intermédiaire</td>
-                            <td data-label="Tarifs">N/S</td>
-                        </tr>
-
-                        <!-- Mardi -->
-                        <tr>
-                            <td data-label="Jour" rowspan="2"><strong>Mardi</strong></td>
-                            <td data-label="Horaire">18h00 – 19h00</td>
-                            <td data-label="Cours">Adultes</td>
-                            <td data-label="Niveau">Intermédiaire</td>
-                            <td data-label="Tarifs">N/S</td>
+                            <td data-label="Jour"><strong>Mercredi</strong></td>
+                            <td data-label="Horaires">
+                                <ul style="list-style:none; padding:0; margin:0;">
+                                    <li>13h30 – 14h45</li>
+                                    <li>14h45 – 16h00</li>
+                                    <li>16h00 – 17h15</li>
+                                    <li>17h15 – 18h30</li>
+                                    <li>18h30 – 19h45</li>
+                                    <li>19h45 – 21h00</li>
+                                </ul>
+                            </td>
                         </tr>
                         <tr>
-                            <td data-label="Horaire">18h00 – 20h00</td>
-                            <td data-label="Cours">Adultes</td>
-                            <td data-label="Niveau">Intermédiaire + / Avancé</td>
-                            <td data-label="Tarifs">N/S</td>
-                        </tr>
-
-                        <!-- Mercredi -->
-                        <tr>
-                            <td data-label="Jour" rowspan="3"><strong>Mercredi</strong></td>
-                            <td data-label="Horaire">14h00 – 15h00</td>
-                            <td data-label="Cours">Enfants (7-9 ans)</td>
-                            <td data-label="Niveau">Initiation</td>
-                            <td data-label="Tarifs">N/S</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Horaire">15h00 – 16h00</td>
-                            <td data-label="Cours">Enfants (9-13 ans)</td>
-                            <td data-label="Niveau">Initiation / Progression</td>
-                            <td data-label="Tarifs">N/S</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Horaire">18h00 – 19h00</td>
-                            <td data-label="Cours">Ados (14-17 ans)</td>
-                            <td data-label="Niveau">Progression</td>
-                            <td data-label="Tarifs">N/S</td>
-                        </tr>
-
-                        <!-- Jeudi -->
-                        <tr>
-                            <td data-label="Jour" rowspan="2"><strong>Jeudi</strong></td>
-                            <td data-label="Horaire">17h00 – 18h00</td>
-                            <td data-label="Cours">Ados (14-17 ans)</td>
-                            <td data-label="Niveau">Intermédiaire</td>
-                            <td data-label="Tarifs">N/S</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Horaire">18h00 – 19h00</td>
-                            <td data-label="Cours">Adultes – Adultes</td>
-                            <td data-label="Niveau">Libre / Tous Niveaux</td>
-                            <td data-label="Tarifs">N/S</td>
-                        </tr>
-
-                        <!-- Vendredi -->
-                        <tr>
-                            <td data-label="Jour" rowspan="2"><strong>Vendredi</strong></td>
-                            <td data-label="Horaire">09h30 – 17h30</td>
-                            <td data-label="Cours">Adultes</td>
-                            <td data-label="Niveau">Adultes</td>
-                            <td data-label="Tarifs">N/S</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Horaire">18h00 – 19h00</td>
-                            <td data-label="Cours">Mix</td>
-                            <td data-label="Niveau">Initiation / Débutants</td>
-                            <td data-label="Tarifs">N/S</td>
-                        </tr>
-
-                        <!-- Samedi -->
-                        <tr>
-                            <td data-label="Jour" rowspan="4"><strong>Samedi</strong></td>
-                            <td data-label="Horaire">08h00 – 09h00</td>
-                            <td data-label="Cours">Adultes</td>
-                            <td data-label="Niveau">Réservation</td>
-                            <td data-label="Tarifs">N/S</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Horaire">09h00 – 10h00</td>
-                            <td data-label="Cours">Adultes</td>
-                            <td data-label="Niveau">Initiation +</td>
-                            <td data-label="Tarifs">N/S</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Horaire">09h30 – 10h30</td>
-                            <td data-label="Cours">Adultes</td>
-                            <td data-label="Niveau">Intermédiaire +</td>
-                            <td data-label="Tarifs">N/S</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Horaire">10h00 – 11h00</td>
-                            <td data-label="Cours">Enfants / Ado (8-16)</td>
-                            <td data-label="Niveau">Initiation / Progression</td>
-                            <td data-label="Tarifs">N/S</td>
-                        </tr>
-
-                        <!-- Dimanche -->
-                        <tr>
-                            <td data-label="Jour" rowspan="2"><strong>Dimanche</strong></td>
-                            <td data-label="Horaire">10h00 – 11h00</td>
-                            <td data-label="Cours">Adultes</td>
-                            <td data-label="Niveau">Initiation / Découverte</td>
-                            <td data-label="Tarifs">N/S</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Horaire">11h30 – 13h00</td>
-                            <td data-label="Cours">Adultes</td>
-                            <td data-label="Niveau">Intermédiaire / Tous +</td>
-                            <td data-label="Tarifs">N/S</td>
+                            <td data-label="Jour"><strong>Samedi</strong></td>
+                            <td data-label="Horaires">
+                                <ul style="list-style:none; padding:0; margin:0;">
+                                    <li>08h45 – 10h00</li>
+                                    <li>10h00 – 11h15</li>
+                                    <li>11h15 – 12h30</li>
+                                </ul>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -248,9 +153,8 @@
             <div class="cours-cta-inner">
                 <div class="cours-cta-text">
                     <h3>Envie d'essayer un cours ?</h3>
-                    <p>Première séance de découverte offerte pour les nouveaux adhérents.</p>
                 </div>
-                <a href="reserver.html" class="btn btn-cta-dark">Réserver un cours d'essai</a>
+                <a href="contact.html" class="btn btn-cta-dark">Faire une demande par mail</a>
             </div>
         </div>
     </section>
@@ -262,28 +166,29 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
-                    <h3>Padel <span>Côtière</span></h3>
+                    <img src="logo padel cotiere.png" alt="Padel Côtière Logo" class="footer-logo"
+                        style="height: 110px; margin-bottom: 24px;">
                     <ul class="footer-contact-list">
                         <li class="footer-contact-item">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                             </svg>
-                            <span>123 Route du Sport, 01700 Miribel</span>
+                            <span>Chem. de Halage, 01700 Neyron, France</span>
                         </li>
                         <li class="footer-contact-item">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                             </svg>
-                            <a href="tel:+33478000000">04 78 00 00 00</a>
+                            <a href="tel:+33688383652">06 88 38 36 52</a>
                         </li>
                         <li class="footer-contact-item">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path
                                     d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                             </svg>
-                            <a href="mailto:contact@padelcotiere.fr">contact@padelcotiere.fr</a>
+                            <a href="mailto:padelcotiere@gmail.com">padelcotiere@gmail.com</a>
                         </li>
                     </ul>
                     <div class="footer-socials">
@@ -304,7 +209,8 @@
 
                 <div class="footer-form-section">
                     <h4>Nous contacter</h4>
-                    <form class="footer-form" id="contactForm" action="#" method="POST">
+                    <form class="footer-form" id="contactForm" action="mailto:padelcotiere@gmail.com" method="POST"
+                        enctype="text/plain">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="form-name">Nom complet</label>
@@ -314,6 +220,10 @@
                                 <label for="form-email">Email</label>
                                 <input type="email" id="form-email" name="email" placeholder="votre@email.com" required>
                             </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-phone">Numéro de téléphone</label>
+                            <input type="tel" id="form-phone" name="phone" placeholder="06 00 00 00 00" required>
                         </div>
                         <div class="form-group">
                             <label for="form-message">Message</label>

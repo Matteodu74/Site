@@ -212,8 +212,18 @@ img {
   color: var(--golden-yellow);
 }
 
+.logo img {
+  height: 110px;
+  width: auto;
+  transition: var(--transition);
+}
+
 .header.scrolled .logo {
   color: var(--text-dark);
+}
+
+.header.scrolled .logo img {
+  transform: scale(0.9);
 }
 
 .nav-links {
@@ -362,6 +372,7 @@ img {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
