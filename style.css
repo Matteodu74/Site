@@ -380,6 +380,73 @@ img {
 }
 
 /* ============================================================
+   SECTION — TEASER OUVERTURE
+   ============================================================ */
+.teaser-ouverture {
+  padding: var(--section-padding);
+  background: var(--navy-dark);
+  color: var(--white);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.teaser-ouverture::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 213, 0, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.teaser-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.teaser-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(255, 213, 0, 0.15);
+  color: var(--golden-yellow);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 213, 0, 0.3);
+}
+
+.teaser-ouverture h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: var(--golden-yellow);
+  letter-spacing: -0.02em;
+}
+
+.teaser-ouverture p {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.teaser-ouverture p strong {
+  color: var(--white);
+}
+
+.teaser-ouverture .btn {
+  margin-top: 24px;
+}
+
+/* ============================================================
    SECTION — LE PADEL POUR TOUS
    ============================================================ */
 .padel-pour-tous {

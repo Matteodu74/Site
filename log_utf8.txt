@@ -1,0 +1,10 @@
+﻿d265c6b Add TikTok and LinkedIn to footer
+a573800 Update contact form action to formsubmit
+2883858 Mise ├á jour des liens externes pour les clubs de tennis (Miribel, Neyron, Tramoyes)
+6d20ae9 Ajout offre lancement, nouvelles images (infrastructures), d├®tails tarifs et refonte page r├®servation.
+e88540c feat: page R├®server (Ten'Up FFT + Web) + tous les CTA pointent vers reserver.html
+f611055 feat: page Contact + navigation compl├¿te 7 pages
+076e785 feat: page Actualit├®s + liens navigation mis ├á jour sur toutes les pages
+a714457 feat: page Cours & Stages + navigation inter-pages compl├¿te
+0bc0be1 chore: add .gitignore and remove node_modules from tracking
+66f6359 feat: site Padel C├┤ti├¿re - 4 pages (accueil, le club, tarifs, infrastructures)
