@@ -5,7 +5,7 @@ const files = [
   'actualites.html', 'contact.html', 'reserver.html'
 ];
 
-const newLink = 'https://www.tiktok.com/@padel.ctire';
+const newLink = 'https://www.tiktok.com/@padelcotiere';
 
 files.forEach(file => {
   if (fs.existsSync(file)) {
@@ -13,7 +13,7 @@ files.forEach(file => {
     
     // Regex to find TikTok anchor tag
     // It captures cases where href is "#" or "https://www.tiktok.com"
-    const regex = /<a href="[^"]*" class="social-icon" aria-label="TikTok">|<a href="[^"]*" class="social-icon" aria-label="TikTok" target="_blank" rel="noopener noreferrer">/g;
+    const regex = /<a [^>]*aria-label="TikTok"[^>]*>/g;
     
     const replacement = `<a href="${newLink}" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="TikTok">`;
     
