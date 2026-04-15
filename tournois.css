@@ -82,6 +82,10 @@
     background: #1abc9c;
 }
 
+.p50-badge {
+    background: #e67e22;
+}
+
 /* Green */
 .p100-badge {
     background: var(--royal-blue);
