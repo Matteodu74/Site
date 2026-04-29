@@ -285,6 +285,195 @@
 }
 
 /* ============================================================
+   OFFRE COURS COLLECTIFS
+   ============================================================ */
+.offre-collectifs-section {
+    padding: var(--section-padding);
+    background: linear-gradient(160deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+.offre-collectifs-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius);
+    padding: 48px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    backdrop-filter: blur(12px);
+}
+
+.offre-collectifs-badge {
+    position: absolute;
+    top: -14px;
+    left: 40px;
+    background: linear-gradient(135deg, var(--golden-yellow) 0%, #FFC300 100%);
+    color: var(--text-dark);
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 6px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(255, 195, 0, 0.3);
+}
+
+.offre-collectifs-title {
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.offre-collectifs-period {
+    font-size: 1rem;
+    color: var(--golden-yellow);
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.offre-collectifs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 36px;
+}
+
+.offre-jour-card {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-sm);
+    padding: 24px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.offre-jour-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.offre-jour-header {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.offre-jour-niveau {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    background: var(--golden-yellow);
+    padding: 4px 14px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 16px;
+}
+
+.offre-creneaux {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.offre-creneaux li {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.92rem;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    font-weight: 500;
+}
+
+.offre-creneaux li:last-child {
+    border-bottom: none;
+}
+
+.offre-collectifs-contact {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 28px;
+    text-align: center;
+}
+
+.offre-collectifs-contact h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--golden-yellow);
+    margin-bottom: 12px;
+}
+
+.offre-collectifs-contact > p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.offre-contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.offre-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.offre-contact-btn svg {
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+.offre-contact-mail {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.offre-contact-mail:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.offre-contact-tel {
+    background: linear-gradient(135deg, var(--golden-yellow) 0%, #FFC300 100%);
+    color: var(--text-dark);
+    border: none;
+}
+
+.offre-contact-tel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(255, 195, 0, 0.35);
+}
+
+.offre-permanence-note {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+}
+
+.offre-permanence-note strong {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 992px) {
@@ -371,5 +560,28 @@
 
     .cours-cta-inner {
         padding: 28px 20px;
+    }
+
+    .offre-collectifs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .offre-collectifs-card {
+        padding: 36px 20px;
+    }
+
+    .offre-collectifs-badge {
+        left: 20px;
+    }
+
+    .offre-contact-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offre-contact-btn {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
     }
 }
