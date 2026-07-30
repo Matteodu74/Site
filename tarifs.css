@@ -524,3 +524,213 @@
         height: 260px;
     }
 }
+
+/* ============================================================
+   COTISATIONS 2026/2027 — Table and Grid Layout
+   ============================================================ */
+.cotisation-container {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.cotisation-benefits {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius);
+    padding: 32px 28px;
+    color: var(--white);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.cotisation-benefits h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--golden-yellow);
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+
+.cotisation-benefits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cotisation-benefits li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cotisation-benefits li:last-child {
+    margin-bottom: 0;
+}
+
+.cotisation-benefits li svg {
+    flex-shrink: 0;
+    fill: var(--golden-yellow);
+    margin-top: 3px;
+}
+
+.cotisation-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom scrollbar for horizontal table scrolling */
+.cotisation-table-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+.cotisation-table-wrapper::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+.cotisation-table-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+.cotisation-table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.cotisation-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    color: var(--text-dark);
+    font-size: 0.88rem;
+    text-align: left;
+    min-width: 720px;
+}
+
+.cotisation-table thead th {
+    background: #0B1529;
+    color: var(--white);
+    padding: 16px 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    border-bottom: 2px solid var(--golden-yellow);
+}
+
+.cotisation-table thead th small {
+    display: block;
+    font-weight: 500;
+    color: var(--golden-yellow);
+    margin-top: 4px;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+}
+
+.cotisation-table tbody td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: middle;
+}
+
+.cotisation-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.cotisation-table tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.cotisation-table tbody tr:hover {
+    background: #f1f5f9;
+}
+
+.cotisation-table td strong {
+    color: var(--text-dark);
+    font-weight: 700;
+}
+
+.cotisation-table td small {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    margin-top: 2px;
+}
+
+.cotisation-table .price-cell {
+    text-align: center;
+    font-weight: 800;
+    color: var(--royal-blue);
+    font-size: 1.05rem;
+}
+
+.cotisation-table .price-cell-colspan {
+    text-align: center;
+    background: rgba(0, 98, 230, 0.04);
+    color: var(--royal-blue);
+    font-weight: 800;
+}
+
+.cotisation-info-note {
+    margin-top: 20px;
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+}
+
+.cotisation-info-note a {
+    color: var(--golden-yellow);
+    text-decoration: underline;
+}
+
+.cotisation-info-note a:hover {
+    color: var(--white);
+}
+
+.scroll-helper-badge {
+    display: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--golden-yellow);
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    width: max-content;
+    margin-left: auto;
+}
+
+@media (max-width: 992px) {
+    .cotisation-container {
+        grid-template-columns: 1fr;
+        max-width: 720px;
+    }
+    .scroll-helper-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cotisation-benefits {
+        padding: 24px 20px;
+    }
+    .cotisation-table thead th {
+        padding: 12px 14px;
+        font-size: 0.82rem;
+    }
+    .cotisation-table tbody td {
+        padding: 10px 14px;
+        font-size: 0.82rem;
+    }
+}
