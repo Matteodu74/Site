@@ -9,5 +9,15 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/evenement",
+      "destination": "/actualites.html"
+    },
+    {
+      "source": "/evenements",
+      "destination": "/actualites.html"
+    }
   ]
 }

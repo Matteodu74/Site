@@ -351,3 +351,317 @@
         padding: 16px;
     }
 }
+
+
+/* ============================================================
+   ÉVÉNEMENT DU MOMENT — TÉLÉTHON & POSTER STYLES
+   ============================================================ */
+
+/* Bannière d'alerte événement en haut de page */
+.actu-top-banner {
+    background: linear-gradient(90deg, #ffd500 0%, #ffea79 100%);
+    color: var(--navy-dark, #0b1529);
+    text-align: center;
+    padding: 14px 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.actu-top-banner a {
+    color: var(--navy-dark, #0b1529);
+    text-decoration: underline;
+    font-weight: 800;
+    margin-left: 8px;
+    transition: var(--transition);
+}
+
+.actu-top-banner a:hover {
+    color: var(--royal-blue, #0062e6);
+}
+
+/* En-tête de section */
+.actu-section-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.actu-tag--telethon {
+    background: #e6007e;
+    color: #ffffff;
+}
+
+/* Conteneur de l'affiche verticale */
+.actu-featured-img--poster {
+    aspect-ratio: auto;
+    background: #0b1529;
+    padding: 12px;
+    border-radius: var(--radius, 12px);
+    box-shadow: 0 12px 36px rgba(11, 21, 41, 0.16);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.actu-featured-img--poster:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 48px rgba(11, 21, 41, 0.25);
+}
+
+.actu-featured-img--poster img {
+    position: static;
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    border-radius: calc(var(--radius, 12px) - 4px);
+    display: block;
+    object-fit: contain;
+    transition: transform var(--transition-slow);
+}
+
+.actu-featured-img--poster:hover img {
+    transform: scale(1.02);
+}
+
+.poster-zoom-hint {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(11, 21, 41, 0.88);
+    backdrop-filter: blur(8px);
+    color: #ffffff;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 9px 18px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    pointer-events: none;
+    opacity: 0.95;
+    transition: opacity var(--transition), transform var(--transition), background var(--transition);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.actu-featured-img--poster:hover .poster-zoom-hint {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-2px);
+    background: var(--royal-blue, #0062e6);
+}
+
+/* Texte et détails événement */
+.actu-lead {
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: var(--royal-blue, #0062e6);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.actu-event-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin: 24px 0;
+    background: var(--off-white, #f5f7fa);
+    padding: 20px;
+    border-radius: var(--radius, 12px);
+    border-left: 4px solid var(--golden-yellow, #ffd500);
+}
+
+.event-detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.event-detail-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(0, 98, 230, 0.12);
+    color: var(--royal-blue, #0062e6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.event-detail-item strong {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted, #5a6278);
+    margin-bottom: 2px;
+}
+
+.event-detail-item span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark, #1a1a2e);
+}
+
+.actu-featured-body p {
+    margin-bottom: 14px;
+}
+
+.actu-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 24px;
+    align-items: center;
+}
+
+.actu-help-text {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--text-muted, #5a6278);
+    background: rgba(0, 98, 230, 0.04);
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px dashed rgba(0, 98, 230, 0.2);
+}
+
+.actu-help-text a {
+    color: var(--royal-blue, #0062e6);
+    text-decoration: underline;
+}
+
+/* Vignette dans la grille */
+.actu-card-img--telethon img {
+    object-position: center top;
+}
+
+/* Modal Lightbox */
+.poster-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    padding: 20px;
+}
+
+.poster-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.poster-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(11, 21, 41, 0.88);
+    backdrop-filter: blur(10px);
+}
+
+.poster-modal-content {
+    position: relative;
+    z-index: 2;
+    max-width: 90vw;
+    max-height: 94vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poster-modal-img {
+    max-width: 100%;
+    max-height: 78vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    background: #000;
+}
+
+.poster-modal-close {
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #1a1a2e;
+    border: none;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform var(--transition), background var(--transition);
+}
+
+.poster-modal-close:hover {
+    background: var(--golden-yellow, #ffd500);
+    transform: scale(1.1);
+}
+
+.poster-modal-caption {
+    margin-top: 14px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.btn-download {
+    background: var(--golden-yellow, #ffd500);
+    color: var(--text-dark, #1a1a2e);
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.btn-download:hover {
+    background: #fff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .poster-modal-close {
+        top: -10px;
+        right: -10px;
+        width: 36px;
+        height: 36px;
+        font-size: 22px;
+    }
+
+    .poster-modal-caption {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .actu-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .actu-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
