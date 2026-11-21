@@ -665,3 +665,286 @@
         text-align: center;
     }
 }
+
+/* ============================================================
+   PROGRAMME & TARIFS TÉLÉTHON
+   ============================================================ */
+
+.actu-featured {
+    align-items: start;
+}
+
+@media (min-width: 993px) {
+    .actu-featured-img--poster {
+        position: sticky;
+        top: 100px;
+    }
+}
+
+/* Bloc Tarifs / Droit d'entrée solidaire */
+.telethon-pricing-banner {
+    background: linear-gradient(135deg, rgba(230, 0, 126, 0.07) 0%, rgba(255, 213, 0, 0.12) 100%);
+    border: 2px solid #e6007e;
+    border-radius: var(--radius, 12px);
+    padding: 20px 22px;
+    margin: 22px 0;
+    box-shadow: 0 4px 18px rgba(230, 0, 126, 0.08);
+}
+
+.telethon-pricing-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.telethon-pricing-badge {
+    display: inline-block;
+    background: #e6007e;
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.telethon-pricing-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--text-dark, #1a1a2e);
+    margin: 0;
+}
+
+.telethon-pricing-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-muted, #5a6278);
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.telethon-pricing-subtitle strong {
+    color: #e6007e;
+}
+
+.telethon-pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.telethon-price-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: var(--radius-sm, 8px);
+    padding: 14px 16px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.telethon-price-card--adh {
+    border-top: 4px solid var(--royal-blue, #0062e6);
+}
+
+.telethon-price-card--ext {
+    border-top: 4px solid #e6007e;
+}
+
+.telethon-price-card .price-amount {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--text-dark, #1a1a2e);
+    line-height: 1.1;
+    display: block;
+}
+
+.telethon-price-card .price-type {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-muted, #5a6278);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 4px;
+    display: block;
+}
+
+.telethon-price-card .price-tagline {
+    font-size: 0.76rem;
+    color: var(--royal-blue, #0062e6);
+    font-weight: 600;
+    margin-top: 2px;
+    display: block;
+}
+
+.telethon-price-card--ext .price-tagline {
+    color: #e6007e;
+}
+
+/* Bloc Programme détaillé */
+.telethon-schedule {
+    margin: 26px 0;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: var(--radius, 12px);
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.telethon-schedule-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--off-white, #f5f7fa);
+}
+
+.telethon-schedule-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--golden-yellow, #ffd500) 0%, #ffea79 100%);
+    color: var(--navy-dark, #0b1529);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(255, 213, 0, 0.35);
+}
+
+.telethon-schedule-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text-dark, #1a1a2e);
+    margin: 0 0 2px;
+}
+
+.telethon-schedule-subtitle {
+    font-size: 0.85rem;
+    color: var(--text-muted, #5a6278);
+    margin: 0;
+}
+
+.telethon-timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+.telethon-timeline::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    bottom: 14px;
+    left: 7px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--royal-blue, #0062e6) 0%, #e6007e 50%, var(--golden-yellow, #ffd500) 100%);
+    border-radius: 2px;
+}
+
+.timeline-step {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 20px;
+}
+
+.timeline-step:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-step::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 3px solid var(--royal-blue, #0062e6);
+    box-shadow: 0 0 0 2px rgba(0, 98, 230, 0.2);
+}
+
+.timeline-time-badge {
+    display: inline-block;
+    background: var(--off-white, #f0f3f8);
+    color: var(--navy-dark, #0b1529);
+    font-size: 0.78rem;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 6px;
+    letter-spacing: 0.02em;
+}
+
+.timeline-step-title {
+    font-size: 1.02rem;
+    font-weight: 800;
+    color: var(--text-dark, #1a1a2e);
+    margin: 0 0 4px;
+    line-height: 1.35;
+}
+
+.timeline-step-desc {
+    font-size: 0.88rem;
+    color: var(--text-muted, #5a6278);
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* Variantes spéciales */
+.timeline-step--highlight::before {
+    border-color: #e6007e;
+    background: #e6007e;
+    box-shadow: 0 0 0 3px rgba(230, 0, 126, 0.25);
+}
+
+.timeline-step--highlight .timeline-time-badge {
+    background: #e6007e;
+    color: #ffffff;
+}
+
+.timeline-step--highlight .timeline-step-title {
+    color: #e6007e;
+}
+
+.timeline-step--tombola-card {
+    background: linear-gradient(135deg, rgba(230, 0, 126, 0.08) 0%, rgba(255, 213, 0, 0.16) 100%);
+    border: 1px solid rgba(230, 0, 126, 0.28);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-top: 6px;
+    font-size: 0.88rem;
+    color: var(--text-dark, #1a1a2e);
+}
+
+.timeline-step--tombola-card strong {
+    color: #b00060;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.timeline-step--lunch::before {
+    border-color: #d4a017;
+    background: var(--golden-yellow, #ffd500);
+}
+
+.timeline-step--lunch .timeline-time-badge {
+    background: rgba(255, 213, 0, 0.25);
+    color: #5c4200;
+}
+
+@media (max-width: 600px) {
+    .telethon-pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .telethon-schedule {
+        padding: 16px;
+    }
+    .timeline-step {
+        padding-left: 20px;
+    }
+}
